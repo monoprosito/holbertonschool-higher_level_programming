@@ -12,7 +12,7 @@ int check_cycle(listint_t *list)
 	listint_t *turtle = list, *hare = list;
 	int found = 0;
 
-	while (turtle && hare)
+	while ((turtle && hare) && hare->next)
 	{
 		turtle = turtle->next;
 		hare = hare->next->next;
