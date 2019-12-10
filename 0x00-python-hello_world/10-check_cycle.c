@@ -12,11 +12,11 @@ int check_cycle(listint_t *list)
 	listint_t *turtle = list, *hare = list;
 	int found = 0;
 
-	while ((turtle && hare) && hare->next)
+	while (turtle && hare)
 	{
-		turtle = list->next;
+		turtle = turtle->next;
 		hare = hare->next->next;
-
+		
 		if (!hare->next || !hare->next->next)
 			break;
 
