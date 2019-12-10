@@ -9,29 +9,21 @@
   */
 int check_cycle(listint_t *list)
 {
-	listint_t *turtle = NULL, *hare = NULL;
+	listint_t *turtle = list, *hare = list;
 	int found = 0;
 
-	if (list)
+	while ((turtle && hare) && hare->next)
 	{
-		turtle = list;
-		hare = list->next;
-		while (turtle)
+		turtle = list->next;
+		hare = hare->next->next;
+
+		if (!hare->next || !hare->next->next)
+			break;
+
+		if (turtle == hare)
 		{
-			if (!hare->next)
-				break;
-			
-			if (!hare->next->next)
-				break;
-
-			if (turtle == hare)
-			{
-				found = 1;
-				break;
-			}
-
-			turtle = list->next;
-			hare = hare->next->next;
+			found = 1;
+			break;
 		}
 	}
 
