@@ -20,6 +20,9 @@ int check_cycle(listint_t *list)
 		{
 			if (!hare->next)
 				break;
+			
+			if (!hare->next->next)
+				break;
 
 			if (turtle == hare)
 			{
