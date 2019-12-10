@@ -5,4 +5,4 @@ for i in range(100):
     elif i < 99:
         print('{0}, '.format(i), end='')
     else:
-        print('{0}'.format(i))
+        print(i)
