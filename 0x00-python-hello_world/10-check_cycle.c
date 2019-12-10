@@ -16,7 +16,7 @@ int check_cycle(listint_t *list)
 	{
 		turtle = list;
 		hare = list->next;
-		while (list)
+		while (turtle)
 		{
 			if (!hare->next)
 				break;
@@ -32,7 +32,6 @@ int check_cycle(listint_t *list)
 
 			turtle = list->next;
 			hare = hare->next->next;
-			list = list->next;
 		}
 	}
 
