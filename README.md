@@ -1,8 +1,11 @@
 <h1 align="center">Holberton School Higher-Level Programming</h1>
-This repository stores my solutions to the incredible high-level programming projects I did at Holberton Campus and they are written in Python programming language.
+This repository stores my solutions to the incredible high-level programming projects I did at Holberton Campus and they are 
+written in Python programming language.
+
+---
 
 <p align="center">
-<img src="https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/holby.jpg?raw=true">
+<a target="_blank" href="https://www.holbertonschool.com/"><img src="https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/holby.jpg?raw=true"></a>
 </p>
 
 ---
