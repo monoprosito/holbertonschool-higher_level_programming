@@ -1,6 +1,4 @@
 #include <stdlib.h>
-#include <stdio.h>
-#include <string.h>
 #include "lists.h"
 
 /**
@@ -11,56 +9,78 @@
   */
 int is_palindrome(listint_t **head)
 {
-    listint_t *current = NULL;
-    int stat = 0;
-    char *buffer = NULL;
+    listint_t *start = NULL, *end = NULL;
+    unsigned int stat = 1, i = 0, len_cyc = 0, len_list = 0;
 
     if (head == NULL)
-        return (stat);
-    
+        return (0);
+
     if (*head == NULL)
         return (1);
     
-    current = *head;
+    start = *head;
+    len_cyc = listint_len(start) / 2;
+    len_list = listint_len(start) - 1;
+    end = get_nodeint_at_index(start, len_list);
 
-    while (current != NULL)
+    for (; i < len_cyc; ++i)
     {
-        buffer = malloc(sizeof(char) * 500);
-        if (buffer == NULL)
-            return (0);
+        if (start->n != end->n)
+        {
+            stat = 0;
+            break;
+        }
 
-        sprintf(buffer, "%d", current->n);
-        stat = str_is_palindrome(buffer);
-        free(buffer);
-        current = current->next;
+        --len_list;
+        start = start->next;
+        end = get_nodeint_at_index(*head, len_list);
     }
 
     return (stat);
 }
 
 /**
-  * str_is_palindrome - Checks if a string is a palindrome
-  * @str: The string to checks
+  * get_nodeint_at_index - Gets a node from a linked list
+  * @head: The head of the linked list
+  * @index: The index to find in the linked list
   *
-  * Return: 0 if it is not a palindrome, 1 if it is a palindrome
+  * Return: The specific node of the linked list
   */
-int str_is_palindrome(char *str)
+listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
-    unsigned int i = 0, stat = 1, len_cyc = 0, len_str = 0;
+	listint_t *current = head;
+	unsigned int iter_times = 0;
 
-    len_str = strlen(str) - 1;
-    len_cyc = strlen(str) / 2;
+	if (head)
+	{
+		while (current != NULL)
+		{
+			if (iter_times == index)
+				return (current);
 
-    for (; i < len_cyc; ++i)
-    {
-        if (str[i] != str[len_str])
-        {
-            stat = 0;
-            break;
-        }
+			current = current->next;
+			++iter_times;
+		}
+	}
 
-        --len_str;
-    }
+	return (NULL);
+}
 
-    return (stat);
+/**
+  * slistint_len - Counts the number of elements in a linked list
+  * @h: The linked list to count
+  *
+  * Return: Number of elements in the linked list
+  */
+size_t listint_len(const listint_t *h)
+{
+	int lenght = 0;
+
+	while (h != NULL)
+	{
+		++lenght;
+		h = h->next;
+	}
+
+	return (lenght);
 }
