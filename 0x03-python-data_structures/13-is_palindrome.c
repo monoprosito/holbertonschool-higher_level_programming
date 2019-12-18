@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <stdio.h>
 #include "lists.h"
 
 /**
@@ -20,18 +21,16 @@ int is_palindrome(listint_t **head)
     
     start = *head;
     len = listint_len(start);
-    len_cyc = len / 2;
-    len_list = len - 1;
-    end = get_nodeint_at_index(start, len_list);
+    len_cyc = len * 2;
+    len_list = len_cyc - 2;
+    end = *head;
 
-    for (; i < len_cyc; ++i)
+    for (; i < len_cyc; i = i + 2)
     {
-        if (start->n != end->n)
+        if (start[i].n != end[len_list].n)
             return (0);
 
-        --len_list;
-        start = start->next;
-        end = get_nodeint_at_index(*head, len_list);
+        len_list = len_list - 2;
     }
 
     return (1);
