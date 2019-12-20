@@ -10,16 +10,22 @@ def roman_to_int(roman_string):
     ]
     num = 0
     last = 0
+    rep = 1
 
     for letter in roman_string:
         for elem in roman_letters:
             if letter == elem[0]:
                 if last == 0 or last >= elem[1]:
                     num += elem[1]
-                    print('El ultimo anadido fue: {0} y acabe de anadir +{1}'.format(last, elem[1]))
-                elif last <= elem[1]:
-                    num += elem[1] - last
-                    print('El ultimo anadido fue: {0} y acabe de quitar -{1}'.format(last, elem[1] - last))
+                    rep += last
+
+                    if last != elem[1]:
+                        rep = 1
+                elif last < elem[1]:
+                    if rep > 1:
+                        num = (num - rep) + (elem[1] - rep)
+                    else:
+                        num = elem[1] - last
 
                 last = elem[1]
 
