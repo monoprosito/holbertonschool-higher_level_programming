@@ -3,6 +3,9 @@ def roman_to_int(roman_string):
     if type(roman_string) is not str or roman_string is None:
         return 0
 
+    if len(roman_string) == 0:
+        return 0
+
     roman_letters = [
         ['M', 1000], ['D', 500],
         ['C', 100], ['L', 50],
