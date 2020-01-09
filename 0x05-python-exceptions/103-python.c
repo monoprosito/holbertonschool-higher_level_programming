@@ -1,5 +1,6 @@
 #include "/usr/include/python3.4/Python.h"
 #include <stdio.h>
+#include <stdlib.h>
 
 void print_hexn(const char *str, int n);
 void print_python_float(PyObject *p);
@@ -77,7 +78,8 @@ void print_python_list(PyObject *p)
 
 void print_python_float(PyObject *p)
 {
-    PyFloatObject *clone = (PyFloatObject *) p; 
+    PyFloatObject *clone = (PyFloatObject *) p;
+    float n = clone->ob_fval;
 
     printf("[.] float object info\n");
     if (!PyFloat_Check(p))
@@ -86,7 +88,10 @@ void print_python_float(PyObject *p)
         return;
     }
 
-    printf("  value: %f\n", clone->ob_fval);
+    if ((int) n == n)
+        printf("  value: %0.1f\n", clone->ob_fval);
+    else
+        printf("  value: %0.16g\n", clone->ob_fval);
 
     fflush(stdout);
 }
