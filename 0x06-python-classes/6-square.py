@@ -91,7 +91,7 @@ class Square:
         return False
 
     def __check_integers(self, position):
-        if type(position[0]) is int and type(position[0]) is int:
+        if type(position[0]) is int and type(position[1]) is int:
             return True
 
         return False
