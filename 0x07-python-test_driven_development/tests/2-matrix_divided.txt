@@ -111,25 +111,37 @@ Test case #9: A test case with a string acting as a row
     Traceback (most recent call last):
     TypeError: matrix must be a matrix (list of lists) of integers/floats
 
+Test case #10: A test case with a matrix of empty lists
+    >>> matrix = []
+    >>> type(matrix_divided(matrix, 3))
+    Traceback (most recent call last):
+    TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+Test case #11: A test case with a matrix of empty lists
+    >>> matrix = [[], []]
+    >>> type(matrix_divided(matrix, 3))
+    Traceback (most recent call last):
+    TypeError: matrix must be a matrix (list of lists) of integers/floats
+
 
 Section // Bad Divisor
 ======================
 
-Test case #10: A test case with a 'None' divider
+Test case #12: A test case with a 'None' divider
 
     >>> matrix = [[1, 2, 54.0], [24, 35.5, 6]]
     >>> matrix_divided(matrix, None)
     Traceback (most recent call last):
     TypeError: div must be a number
 
-Test case #11: A test case with a string divider
+Test case #13: A test case with a string divider
 
     >>> matrix = [[1, 2, 54.0], [24, 35.5, 6]]
     >>> matrix_divided(matrix, 'Monty Python')
     Traceback (most recent call last):
     TypeError: div must be a number
 
-Test case #12: A test case with a zero as a divisor
+Test case #14: A test case with a zero as a divisor
 
     >>> matrix = [[10.0, 65, 37.0],[40, 15.0, 66]]
     >>> matrix_divided(matrix, 0)
@@ -140,7 +152,7 @@ Test case #12: A test case with a zero as a divisor
 Section // Inconsistent rows
 ======================
 
-Test case #13: A test case with inconsistent rows
+Test case #15: A test case with inconsistent rows
 
     >>> matrix = [[1, 2, 3], [4, 5]]
     >>> matrix_divided(matrix, 3)
@@ -151,7 +163,7 @@ Test case #13: A test case with inconsistent rows
 Section // Types
 ======================
 
-Test case #14: A test case with the type of value returned
+Test case #16: A test case with the type of value returned
 
     >>> matrix = [[1, 2, 3], [4, 5, 6]]
     >>> type(matrix_divided(matrix, 3))

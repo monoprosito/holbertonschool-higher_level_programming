@@ -80,7 +80,7 @@ def check_for_list(value):
 
     """
 
-    if type(value) is not list:
+    if type(value) is not list or len(value) == 0:
         raises_matrix_type_error()
 
 
