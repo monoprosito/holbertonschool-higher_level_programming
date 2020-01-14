@@ -24,9 +24,6 @@ class Rectangle:
 
         """
 
-        self.__check_valid_width(width)
-        self.__check_valid_height(height)
-
         self.width = width
         self.height = height
 
@@ -153,11 +150,12 @@ class Rectangle:
             value (int): The number to verify
 
         Returns:
-            int: `True` If value is greater than 0, `False` otherwise.
+            int: `True` If value is greater than
+            or equal to 0, `False` otherwise.
 
         """
 
-        if value > 0:
+        if value >= 0:
             return True
 
         return False
