@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 """
 
-This module prints a square with the character '#' of any positive integer size.
+This module prints a square with the character '#'
+of any positive integer size.
 
 Example:
 
