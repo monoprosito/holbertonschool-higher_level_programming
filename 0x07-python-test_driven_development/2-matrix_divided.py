@@ -119,6 +119,10 @@ def check_for_number(value):
     if type(value) is not int and type(value) is not float:
         return False
 
+    """ Check for a NaN value """
+    if value != value:
+        return False
+
     return True
 
 
