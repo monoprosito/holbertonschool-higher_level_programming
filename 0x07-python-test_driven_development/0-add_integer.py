@@ -20,10 +20,10 @@ def add_integer(a, b=98):
         int: The result of the addition.
 
     """
-    if type(a) is not int and type(a) is not float:
+    if type(a) not in (int, float, bool):
         raise TypeError('a must be an integer')
 
-    if type(b) is not int and type(b) is not float:
+    if type(b) not in (int, float, bool):
         raise TypeError('b must be an integer')
 
     a = convert_to_int(a)
@@ -43,7 +43,7 @@ def convert_to_int(num):
         int: The number casted to integer.
 
     """
-    if type(num) is float:
+    if type(num) in (float, bool):
         num = int(num)
         return num
 
