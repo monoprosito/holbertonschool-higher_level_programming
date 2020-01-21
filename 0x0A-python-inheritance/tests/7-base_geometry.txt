@@ -57,11 +57,42 @@ Test case #4: A test case with a NaN value
     ...     print("[{}] {}".format(e.__class__.__name__, e))
     [TypeError] nan must be an integer
 
+Test case #5: A test case with a boolean value
+
+    >>> try:
+    ...     bg.integer_validator("name", True)
+    ... except Exception as e:
+    ...     print("[{}] {}".format(e.__class__.__name__, e))
+    [TypeError] name must be an integer
+
+Test case #6: A test case with a tuple value
+
+    >>> try:
+    ...     bg.integer_validator("name", (4, ))
+    ... except Exception as e:
+    ...     print("[{}] {}".format(e.__class__.__name__, e))
+    [TypeError] name must be an integer
+
+Test case #7: A test case with a string value
+
+    >>> try:
+    ...     bg.integer_validator("name", 'Monty Python')
+    ... except Exception as e:
+    ...     print("[{}] {}".format(e.__class__.__name__, e))
+    [TypeError] name must be an integer
+
+Test case #8: A test case with a none value
+
+    >>> try:
+    ...     bg.integer_validator("name", None)
+    ... except Exception as e:
+    ...     print("[{}] {}".format(e.__class__.__name__, e))
+    [TypeError] name must be an integer
 
 Section // Value Errors
 =========================
 
-Test case #5: A test case with zero as value
+Test case #9: A test case with zero as value
 
     >>> try:
     ...     bg.integer_validator("age", 0)
@@ -69,7 +100,7 @@ Test case #5: A test case with zero as value
     ...     print("[{}] {}".format(e.__class__.__name__, e))
     [ValueError] age must be greater than 0
 
-Test case #6: A test case with a value less than zero
+Test case #10: A test case with a value less than zero
 
     >>> try:
     ...     bg.integer_validator("distance", -4)
@@ -81,7 +112,7 @@ Test case #6: A test case with a value less than zero
 Section // General Errors
 =========================
 
-Test case #7: A test case with a not available method
+Test case #11: A test case with a not available method
 
     >>> try:
     ...     bg.area()
