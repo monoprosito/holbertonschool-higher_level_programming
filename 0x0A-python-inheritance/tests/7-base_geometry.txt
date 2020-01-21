@@ -89,10 +89,27 @@ Test case #8: A test case with a none value
     ...     print("[{}] {}".format(e.__class__.__name__, e))
     [TypeError] name must be an integer
 
+Test case #9: A test case without value
+
+    >>> try:
+    ...     bg.integer_validator("name")
+    ... except Exception as e:
+    ...     print("[{}] {}".format(e.__class__.__name__, e))
+    [TypeError] integer_validator() missing 1 required positional argument: 'value'
+
+Test case #10: A test case without value
+
+    >>> try:
+    ...     bg.integer_validator()
+    ... except Exception as e:
+    ...     print("[{}] {}".format(e.__class__.__name__, e))
+    [TypeError] integer_validator() missing 2 required positional arguments: 'name' and 'value'
+
+
 Section // Value Errors
 =========================
 
-Test case #9: A test case with zero as value
+Test case #11: A test case with zero as value
 
     >>> try:
     ...     bg.integer_validator("age", 0)
@@ -100,7 +117,7 @@ Test case #9: A test case with zero as value
     ...     print("[{}] {}".format(e.__class__.__name__, e))
     [ValueError] age must be greater than 0
 
-Test case #10: A test case with a value less than zero
+Test case #12: A test case with a value less than zero
 
     >>> try:
     ...     bg.integer_validator("distance", -4)
@@ -112,7 +129,7 @@ Test case #10: A test case with a value less than zero
 Section // General Errors
 =========================
 
-Test case #11: A test case with a not available method
+Test case #13: A test case with a not available method
 
     >>> try:
     ...     bg.area()
