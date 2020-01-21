@@ -1,0 +1,90 @@
+===============================
+7. Integer validator module
+===============================
+
+Import module:
+==============
+    >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+    >>> bg = BaseGeometry()
+
+
+Function:
+=========
+Write a class BaseGeometry (based on 6-base_geometry.py).
+
+    * You can assume name is always a string
+    * If value is not an integer: raises a TypeError exception
+    * If value is less or equal to 0: raises a ValueError exception
+
+
+Section // No exceptions
+=========================
+
+Test case #0: A test case with good parameters
+    
+    >>> bg.integer_validator("my_int", 12)
+
+
+Test case #1: A test case with good parameters
+
+    >>> bg.integer_validator("width", 89)
+
+
+Section // Type Errors
+=========================
+
+Test case #2: A test case with a not integer value
+
+    >>> try:
+    ...     bg.integer_validator("name", "John")
+    ... except Exception as e:
+    ...     print("[{}] {}".format(e.__class__.__name__, e))
+    [TypeError] name must be an integer
+
+Test case #3: A test case with a infinite float value
+
+    >>> try:
+    ...     bg.integer_validator("inf_float", 1e400)
+    ... except Exception as e:
+    ...     print("[{}] {}".format(e.__class__.__name__, e))
+    [TypeError] inf_float must be an integer
+
+Test case #4: A test case with a NaN value
+
+    >>> try:
+    ...     bg.integer_validator("nan", float('nan'))
+    ... except Exception as e:
+    ...     print("[{}] {}".format(e.__class__.__name__, e))
+    [TypeError] nan must be an integer
+
+
+Section // Value Errors
+=========================
+
+Test case #5: A test case with zero as value
+
+    >>> try:
+    ...     bg.integer_validator("age", 0)
+    ... except Exception as e:
+    ...     print("[{}] {}".format(e.__class__.__name__, e))
+    [ValueError] age must be greater than 0
+
+Test case #6: A test case with a value less than zero
+
+    >>> try:
+    ...     bg.integer_validator("distance", -4)
+    ... except Exception as e:
+    ...     print("[{}] {}".format(e.__class__.__name__, e))
+    [ValueError] distance must be greater than 0
+
+
+Section // General Errors
+=========================
+
+Test case #7: A test case with a not available method
+
+    >>> try:
+    ...     bg.area()
+    ... except Exception as e:
+    ...     print("[{}] {}".format(e.__class__.__name__, e))
+    [Exception] area() is not implemented
