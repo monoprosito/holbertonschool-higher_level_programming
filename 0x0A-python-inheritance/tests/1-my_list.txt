@@ -11,15 +11,12 @@ Function:
 =========
 Write a class MyList that inherits from list:
 
-    Public instance method: def print_sorted(self): that prints the list, but sorted (ascending sort)
-    You can assume that all the elements of the list will be of type int
-    You are not allowed to import any module
+    * You can assume that all the elements of the list will be of type int
 
-
-Section // ...
+Section // No exceptions
 =========================
 
-Test case #0: A correct test case
+Test case #0: A test case to order a disordered list of positive integers
 
     >>> my_list = MyList()
     >>> my_list.append(1)
@@ -36,7 +33,7 @@ Test case #0: A correct test case
     >>> print(my_list)
     [1, 4, 2, 3, 5]
 
-Test case #1: A correct test case
+Test case #1: A test case to order a disordered list of positive integers
 
     >>> my_list = MyList()
     >>> my_list.append(5)
@@ -53,7 +50,7 @@ Test case #1: A correct test case
     >>> print(my_list)
     [5, 4, 3, 2, 1]
 
-Test case #2: A correct test case
+Test case #2: A test case for a empty list
 
     >>> my_list = MyList()
     >>> print(my_list)
@@ -65,7 +62,7 @@ Test case #2: A correct test case
     >>> print(my_list)
     []
 
-Test case #3: A correct test case
+Test case #3: A test case for do nothing
 
     >>> my_list = MyList()
     >>> my_list.append(-5)
@@ -82,7 +79,7 @@ Test case #3: A correct test case
     >>> print(my_list)
     [-5, -4, -3, -2, -1]
 
-Test case #4: A correct test case
+Test case #4: A test case to order a disordered list of negative integers
 
     >>> my_list = MyList()
     >>> my_list.append(-1)
@@ -99,7 +96,11 @@ Test case #4: A correct test case
     >>> print(my_list)
     [-1, -4, -2, -3, -5]
 
-Test case #5: A correct test case
+
+Section // Attribute Errors
+============================
+
+Test case #5: A invalid test case of tuples
 
     >>> my_list = (1, 2)
     >>> print(my_list)
