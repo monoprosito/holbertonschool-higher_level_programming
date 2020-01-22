@@ -1,6 +1,5 @@
-#!/usr/bin/python3
+#!/home/msarboleda/.pyenv/shims/python3
 import sys
-import signal
 
 
 def print_info():
@@ -9,10 +8,6 @@ def print_info():
     for scode, code_times in sorted(status_codes.items()):
         if code_times > 0:
             print('{}: {}'.format(scode, code_times))
-
-
-def signal_handler(sig, frame):
-    print_info()
 
 
 status_codes = {
@@ -29,18 +24,22 @@ status_codes = {
 lc = 1
 file_size = 0
 
-for line in sys.stdin:
-    pieces = line.split()
-    status = int(pieces[7])
+try:
+    for line in sys.stdin:
+        if lc % 10 == 0:
+            print_info()
 
-    if str(status) in status_codes.keys():
-        status_codes[str(status)] += 1
+        pieces = line.split()
+        status = int(pieces[7])
 
-    file_size += int(pieces[8])
+        if str(status) in status_codes.keys():
+            status_codes[str(status)] += 1
 
-    if lc % 10 == 0:
-        print_info()
+        file_size += int(pieces[8])
 
-    signal.signal(signal.SIGINT, signal_handler)
+        lc += 1
 
-    lc += 1
+    print_info()
+except KeyboardInterrupt:
+    print_info()
+    raise
