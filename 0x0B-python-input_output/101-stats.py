@@ -38,6 +38,7 @@ try:
         file_size += int(pieces[8])
 
         lc += 1
+    print_info()
 except KeyboardInterrupt:
     print_info()
     raise
