@@ -30,12 +30,19 @@ try:
             print_info()
 
         pieces = line.split()
-        status = int(pieces[7])
 
-        if str(status) in status_codes.keys():
-            status_codes[str(status)] += 1
+        try:
+            status = int(pieces[7])
 
-        file_size += int(pieces[8])
+            if str(status) in status_codes.keys():
+                status_codes[str(status)] += 1
+        except:
+            pass
+
+        try:
+            file_size += int(pieces[8])
+        except:
+            pass
 
         lc += 1
     print_info()
