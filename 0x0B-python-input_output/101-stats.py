@@ -7,7 +7,7 @@ def print_info():
 
     for scode, code_times in sorted(status_codes.items()):
         if code_times > 0:
-            print('{}: {}'.format(scode, code_times))
+            print('{}: {:d}'.format(scode, code_times))
 
 
 status_codes = {
@@ -32,10 +32,16 @@ try:
         pieces = line.split()
         status = int(pieces[7])
 
-        if str(status) in status_codes.keys():
-            status_codes[str(status)] += 1
+        try:
+            if str(status) in status_codes.keys():
+                status_codes[str(status)] += 1
+        except:
+            pass
 
-        file_size += int(pieces[8])
+        try:
+            file_size += int(pieces[8])
+        except:
+            pass
 
         lc += 1
 
