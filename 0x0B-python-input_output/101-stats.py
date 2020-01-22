@@ -2,7 +2,7 @@
 import sys
 
 
-def print_info():
+def print_info(file_size, status_codes):
     print('File size: {:d}'.format(file_size))
 
     for scode, code_times in sorted(status_codes.items()):
@@ -27,7 +27,7 @@ file_size = 0
 try:
     for line in sys.stdin:
         if lc != 0 and lc % 10 == 0:
-            print_info()
+            print_info(file_size, status_codes)
 
         pieces = line.split()
         status = int(pieces[7])
@@ -39,5 +39,5 @@ try:
 
         lc += 1
 except KeyboardInterrupt:
-    print_info()
+    print_info(file_size, status_codes)
     raise
