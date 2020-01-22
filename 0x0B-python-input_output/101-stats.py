@@ -3,7 +3,7 @@ import sys
 
 
 def print_info():
-    print('File size: {}'.format(file_size))
+    print('File size: {:d}'.format(file_size))
 
     for scode, code_times in sorted(status_codes.items()):
         if code_times > 0:
@@ -21,12 +21,12 @@ status_codes = {
     '500': 0
 }
 
-lc = 1
+lc = 0
 file_size = 0
 
 try:
     for line in sys.stdin:
-        if lc % 10 == 0:
+        if lc != 0 and lc % 10 == 0:
             print_info()
 
         pieces = line.split()
