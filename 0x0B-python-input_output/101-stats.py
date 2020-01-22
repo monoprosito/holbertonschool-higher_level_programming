@@ -32,20 +32,12 @@ try:
         pieces = line.split()
         status = int(pieces[7])
 
-        try:
-            if str(status) in status_codes.keys():
-                status_codes[str(status)] += 1
-        except:
-            pass
+        if str(status) in status_codes.keys():
+            status_codes[str(status)] += 1
 
-        try:
-            file_size += int(pieces[8])
-        except:
-            pass
+        file_size += int(pieces[8])
 
         lc += 1
-
-    print_info()
 except KeyboardInterrupt:
     print_info()
     raise
