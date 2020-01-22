@@ -26,9 +26,6 @@ file_size = 0
 
 try:
     for line in sys.stdin:
-        if lc != 0 and lc % 10 == 0:
-            print_info(file_size, status_codes)
-
         pieces = line.split()
         status = int(pieces[7])
 
@@ -37,8 +34,10 @@ try:
 
         file_size += int(pieces[8])
 
+        if lc != 0 and lc % 10 == 0:
+            print_info(file_size, status_codes)
+
         lc += 1
-    print_info(file_size, status_codes)
 except KeyboardInterrupt:
     print_info(file_size, status_codes)
     raise
