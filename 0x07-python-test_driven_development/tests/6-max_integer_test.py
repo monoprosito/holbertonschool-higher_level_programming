@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/home/msarboleda/.pyenv/shims/python3
 """Unittest for max_integer([..])
 """
 import unittest
@@ -30,21 +30,3 @@ class TestMaxInteger(unittest.TestCase):
 
         with self.assertRaises(TypeError):
             max_integer(["Monty", 89, 34, -9.7, "Python"])
-
-        with self.assertRaises(TypeError):
-            max_integer(4)
-
-        with self.assertRaises(TypeError):
-            max_integer([3, 5.7, 7])
-
-        with self.assertRaises(TypeError):
-            max_integer([1e400, 1e500, 1e600])
-
-        with self.assertRaises(TypeError):
-            max_integer(float('nan'))
-
-        with self.assertRaises(TypeError):
-            max_integer('Monty Python')
-
-        with self.assertRaises(TypeError):
-            max_integer((1, 0))
