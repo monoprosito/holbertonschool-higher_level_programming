@@ -17,8 +17,8 @@ class Rectangle(Base):
         """
         super().__init__(id)
 
-        self.check_integer_parameter(height, 'height')
         self.check_integer_parameter(width, 'width')
+        self.check_integer_parameter(height, 'height')
         self.check_integer_parameter(x, 'x')
         self.check_integer_parameter(y, 'y')
 
