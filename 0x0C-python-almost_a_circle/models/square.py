@@ -8,7 +8,14 @@ from models.rectangle import Rectangle
 
 
 class Square(Rectangle):
+    """
+    ...
+    """
+
     def __init__(self, size, x=0, y=0, id=None):
+        """
+        ...
+        """
         super().__init__(size, size, x, y, id)
 
     def __str__(self):
@@ -18,14 +25,23 @@ class Square(Rectangle):
 
     @property
     def size(self):
+        """
+        ...
+        """
         return self.width
 
     @size.setter
     def size(self, value):
+        """
+        ...
+        """
         self.width = value
         self.height = value
 
     def update(self, *args, **kwargs):
+        """
+        ...
+        """
         argc = len(args)
         kwargc = len(kwargs)
         modif_attrs = ['id', 'size', 'x', 'y']
@@ -42,6 +58,9 @@ class Square(Rectangle):
                     setattr(self, k, v)
 
     def to_dictionary(self):
+        """
+        ...
+        """
         return {
             'id': self.id,
             'size': self.size,
