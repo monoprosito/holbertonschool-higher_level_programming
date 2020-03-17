@@ -1,6 +1,5 @@
 <h1 align="center">Holberton School Higher-Level Programming</h1>
-This repository stores my solutions to the incredible high-level programming projects I did at Holberton Campus and they are 
-written in Python programming language.
+This repository stores my solutions to the amazing high-level programming projects I did at the Holberton Campus, most projects are written in Python programming language, but some projects contain something in C and SQL programming language.
 
 ---
 
@@ -18,22 +17,33 @@ written in Python programming language.
 
 ## Requirements
 
-* The Python scripts were built with the **3.4.3 version**.
-* The C scripts were built with the **C89 standard**.
-* The C scripts were compiled with **GNU Compiler Collection 4.8.4**.
+The Python scripts were built with **Python 3.4.3**.
+
+Some scripts need more specific requirements, but these will be shown where they are needed.
 
 ## Projects
-* **0x00. Python - Hello, World** - This is the first project made with Python and consists of knowing some of its bases. The aim of the project is to know about the **Zen of Python**, the **Python interpreter**, print text and variables with `print`, how to use **strings**, understand **indexing** and **slicing** in Python and apply the [pycodestyle](https://pypi.org/project/pycodestyle/) guide.
-* **0x01. Python - if/else, loops, functions** - The objective of this project is to learn the importance of **identation** in Python, how to use `if` and `if ... else` statements, use **comments**, affect variable values, use `while` and `for` cycles, use `break` and `continue` statements, use `else` clauses in a loop, use `range`, use **functions**, scope of variables, traceback and arithmetic operators.
+Here is the complete list of projects in this repository, each project has its description in its respective folder.
+
+* [0x00. Python - Hello, World](https://github.com/monoprosito/holbertonschool-higher_level_programming/tree/master/0x00-python-hello_world)
+* [0x01. Python - if/else, loops, functions](https://github.com/monoprosito/holbertonschool-higher_level_programming/tree/master/0x01-python-if_else_loops_functions)
+* [0x02. Python - import & modules](https://github.com/monoprosito/holbertonschool-higher_level_programming/tree/master/0x02-python-import_modules)
+* [0x03. Python - Data Structures: Lists, Tuples](https://github.com/monoprosito/holbertonschool-higher_level_programming/tree/master/0x03-python-data_structures)
+* [0x04. Python - More Data Structures: Set, Dictionary](https://github.com/monoprosito/holbertonschool-higher_level_programming/tree/master/0x04-python-more_data_structures)
+* [0x05. Python - Exceptions](https://github.com/monoprosito/holbertonschool-higher_level_programming/tree/master/0x05-python-exceptions)
+* [0x06. Python - Classes and Objects](https://github.com/monoprosito/holbertonschool-higher_level_programming/tree/master/0x06-python-classes)
+* [0x07. Python - Test-driven development](https://github.com/monoprosito/holbertonschool-higher_level_programming/tree/master/0x07-python-test_driven_development)
+* [0x08. Python - More Classes and Objects](https://github.com/monoprosito/holbertonschool-higher_level_programming/tree/master/0x08-python-more_classes)
+* [0x09. Python - Everything is object](https://github.com/monoprosito/holbertonschool-higher_level_programming/tree/master/0x09-python-everything_is_object)
+* [0x0A. Python - Inheritance](https://github.com/monoprosito/holbertonschool-higher_level_programming/tree/master/0x0A-python-inheritance)
+* [0x0B. Python - Input/Output](https://github.com/monoprosito/holbertonschool-higher_level_programming/tree/master/0x0B-python-input_output)
+* [0x0C. Python - Almost a circle](https://github.com/monoprosito/holbertonschool-higher_level_programming/tree/master/0x0C-python-almost_a_circle)
+* [0x0D. SQL - Introduction](https://github.com/monoprosito/holbertonschool-higher_level_programming/tree/master/0x0D-SQL_introduction)
+* [0x0E. SQL - More queries](https://github.com/monoprosito/holbertonschool-higher_level_programming/tree/master/0x0E-SQL_more_queries)
 
 ## Usage
-The tests of programs written in C are recommended to compile as follows:
-
-```bash
-gcc -Wall -Werror -Wextra -pedantic filename.c -o output_program 
-```
+Each project and task contains the instructions to compile the code and execute the results.
 
 ## Contributors
-* **Santiago Arboleda Londoño** - [@monoprosito](https://github.com/monoprosito)
-* **Julien Barbier** - [@jbarbier](https://github.com/jbarbier)
-* **Guillaume Salva** - [@papamuziko](https://github.com/papamuziko)
+* **Santiago Arboleda Londoño** ([@monoprosito](https://github.com/monoprosito)), for writing the solutions to the exercises.
+* **Julien Barbier** ([@jbarbier](https://github.com/jbarbier)), for providing tests scripts.
+* **Guillaume Salva** ([@papamuziko](https://github.com/papamuziko)), for providing tests scripts.
