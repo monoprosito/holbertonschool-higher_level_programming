@@ -17,6 +17,21 @@ At the end of this project, I learned how to explain to anyone, without the help
 
 ## Tasks
 
+* [Run Python file](https://github.com/monoprosito/holbertonschool-higher_level_programming/tree/master/0x00-python-hello_world#run-python-file)
+* [Run inline](https://github.com/monoprosito/holbertonschool-higher_level_programming/tree/master/0x00-python-hello_world#run-inline)
+* [Hello, print](https://github.com/monoprosito/holbertonschool-higher_level_programming/tree/master/0x00-python-hello_world#hello-print)
+* [Print integer](https://github.com/monoprosito/holbertonschool-higher_level_programming/tree/master/0x00-python-hello_world#print-integer)
+* [Print float](https://github.com/monoprosito/holbertonschool-higher_level_programming/tree/master/0x00-python-hello_world#print-float)
+* [Print string](https://github.com/monoprosito/holbertonschool-higher_level_programming/tree/master/0x00-python-hello_world#print-string)
+* [Play with strings](https://github.com/monoprosito/holbertonschool-higher_level_programming/tree/master/0x00-python-hello_world#play-with-strings)
+* [Copy - Cut - Paste](https://github.com/monoprosito/holbertonschool-higher_level_programming/tree/master/0x00-python-hello_world#copy-cut-and-paste)
+* [Create a new sentence](https://github.com/monoprosito/holbertonschool-higher_level_programming/tree/master/0x00-python-hello_world#create-a-new-sentence)
+* [Easter Egg](https://github.com/monoprosito/holbertonschool-higher_level_programming/tree/master/0x00-python-hello_world#easter-egg)
+* [Linked list cycle](https://github.com/monoprosito/holbertonschool-higher_level_programming/tree/master/0x00-python-hello_world#linked-list-cycle-c-programming-language)
+* [Hello, write](https://github.com/monoprosito/holbertonschool-higher_level_programming/tree/master/0x00-python-hello_world#hello-write)
+* [Compile](https://github.com/monoprosito/holbertonschool-higher_level_programming/tree/master/0x00-python-hello_world#compile)
+* [ByteCode -> Python](https://github.com/monoprosito/holbertonschool-higher_level_programming/tree/master/0x00-python-hello_world#bytecode---python)
+
 ### Run Python file
 This task proposes to create a shell script that runs a Python script, in which its name is stored in the environment variable `$PYFILE`.
 
