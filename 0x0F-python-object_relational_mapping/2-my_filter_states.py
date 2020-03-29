@@ -14,6 +14,10 @@ if __name__ == '__main__':
     Access to the database and get the states
     from the database.
     """
+
+    if argv[4] is None:
+        return None
+
     db = MySQLdb.connect(host="localhost", user=argv[1], port=3306,
                          passwd=argv[2], db=argv[3])
 
