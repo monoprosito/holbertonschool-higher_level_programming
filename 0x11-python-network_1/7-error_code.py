@@ -11,7 +11,7 @@ import requests
 if __name__ == "__main__":
     req = requests.get(argv[1])
 
-    if req.status_code == requests.codes.ok:
-        print(req.text)
-    else:
+    if req.status_code >= 400:
         print('Error code:', req.status_code)
+    else:
+        print(req.text)
