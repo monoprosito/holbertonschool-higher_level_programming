@@ -23,7 +23,7 @@ if __name__ == "__main__":
 
     bearer_res = requests.post(
         bearer_token_url,
-        auth=(consumer_key, consumer_secret),
+        auth=(argv[1], argv[2]),
         data={'grant_type': 'client_credentials'},
         headers=bearer_headers
     ).json()
