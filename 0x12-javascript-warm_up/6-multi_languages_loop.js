@@ -2,6 +2,6 @@
 
 const languages = ['C is fun', 'Python is cool', 'Javascript is amazing'];
 
-languages.forEach((val) => {
-  console.log(`${val}`);
-});
+for (let i = 0; i < languages.length; ++i) {
+  console.log(languages[i]);
+}
