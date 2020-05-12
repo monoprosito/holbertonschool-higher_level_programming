@@ -9,4 +9,6 @@ if (parseInt(param)) {
     body = JSON.parse(body);
     console.log(body.title);
   });
+} else {
+  console.log('404 NOT FOUND');
 }
