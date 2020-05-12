@@ -2,9 +2,9 @@
 
 // Print function with custom characters to represent the Square
 
-const Rectangle = require('./4-rectangle');
+const OldSquare = require('./5-square');
 
-module.exports = class Square extends Rectangle {
+module.exports = class Square extends OldSquare {
   constructor (size) {
     super(size, size);
   }
@@ -13,7 +13,7 @@ module.exports = class Square extends Rectangle {
     super.double();
   }
 
-  charPrint (c) {
+  charPrint (c = 'X') {
     super.print(c);
   }
 };
