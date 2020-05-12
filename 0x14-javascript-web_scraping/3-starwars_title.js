@@ -6,9 +6,9 @@ const starWarsUri = 'https://swapi-api.hbtn.io/api/films/'.concat(process.argv[2
 request(starWarsUri, function (err, _res, body) {
   body = JSON.parse(body);
 
-  if (err == null) {
-    console.log(err);
-  } else {
+  if (body.title) {
     console.log(body.title);
+  } else {
+    console.log(err);
   }
 });
