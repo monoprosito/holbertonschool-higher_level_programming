@@ -1,7 +1,7 @@
 #!/usr/bin/node
 
 const request = require('request');
-const starWarsUri = 'https://swapi-api.hbtn.io/api/films/';
+const starWarsUri = process.argv[2];
 let times = 0;
 
 request(starWarsUri, function (_err, _res, body) {
