@@ -1,6 +1,6 @@
 #!/usr/bin/node
 
-// Prints a Rectangle with the parameters passed
+// - Rotate and Double the width and height of the Rectangle
 
 module.exports = class Rectangle {
   constructor (width, height) {
