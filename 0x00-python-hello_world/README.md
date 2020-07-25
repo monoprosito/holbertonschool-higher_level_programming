@@ -23,7 +23,7 @@ Write a Shell script that runs a Python script.
 
 The Python file name will be saved in the environment variable `$PYFILE`
 
-**Source:** [0-run](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x00-python-hello_world/0-run)
+**Solution:** [0-run](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x00-python-hello_world/0-run)
 
 ```
 $ amonkeyprogrammer@ubuntu:~/py/0x00$ cat main.py 
@@ -42,7 +42,7 @@ Write a Shell script that runs Python code.
 
 The Python code will be saved in the environment variable `$PYCODE`
 
-**Source:** [1-run_inline](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x00-python-hello_world/1-run_inline)
+**Solution:** [1-run_inline](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x00-python-hello_world/1-run_inline)
 
 ```
 $ amonkeyprogrammer@ubuntu:~/py/0x00$ export PYCODE='print("Holberton School: {}".format(88+10))'
@@ -55,7 +55,7 @@ $ amonkeyprogrammer@ubuntu:~/py/0x00$
 
 Write a Python script that prints exactly `"Programming is like building a multilingual puzzle`, followed by a new line.
 
-**Source:** [2-print.py](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x00-python-hello_world/2-print.py)
+**Solution:** [2-print.py](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x00-python-hello_world/2-print.py)
 
 ```
 $ amonkeyprogrammer@ubuntu:~/py/0x00$ ./2-print.py 
@@ -74,7 +74,7 @@ Complete this [source code](https://github.com/holbertonschool/0x00.py/blob/mast
 * Your code must be 3 lines long
 * You have to use the new print numbers [tips](https://pyformat.info/#number) (with `.format(...)`)
 
-**Source:** [3-print_number.py](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x00-python-hello_world/3-print_number.py)
+**Solution:** [3-print_number.py](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x00-python-hello_world/3-print_number.py)
 
 ```
 $ amonkeyprogrammer@ubuntu:~/py/0x00$ ./3-print_number.py
@@ -92,7 +92,7 @@ Complete the [source code](https://github.com/holbertonschool/0x00.py/blob/maste
 * You are not allowed to cast `number` to string
 * You have to use the new print numbers [tips](https://pyformat.info/#number) (with `.format(...)`)
 
-**Source:** [4-print_float.py](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x00-python-hello_world/4-print_float.py)
+**Solution:** [4-print_float.py](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x00-python-hello_world/4-print_float.py)
 
 ```
 $ amonkeyprogrammer@ubuntu:~/py/0x00$ ./4-print_float.py
@@ -112,7 +112,7 @@ Complete this [source code](https://github.com/holbertonschool/0x00.py/blob/mast
 * You are not allowed to use any loops or conditional statement
 * Your program should be maximum 5 lines long
 
-**Source:** [5-print_string.py](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x00-python-hello_world/5-print_string.py)
+**Solution:** [5-print_string.py](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x00-python-hello_world/5-print_string.py)
 
 ```
 $ amonkeyprogrammer@ubuntu:~/py/0x00$ ./5-print_string.py 
@@ -129,7 +129,7 @@ Complete this [source code](https://github.com/holbertonschool/0x00.py/blob/mast
 * You have to use the variables `str1` and `str2` in your new line of code
 * Your program should be exactly 5 lines long
 
-**Source:** [6-concat.py](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x00-python-hello_world/6-concat.py)
+**Solution:** [6-concat.py](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x00-python-hello_world/6-concat.py)
 
 ```
 $ amonkeyprogrammer@ubuntu:~/py/0x00$ ./6-concat.py
@@ -149,7 +149,7 @@ Complete this [source code](https://github.com/holbertonschool/0x00.py/blob/mast
 * `word_last_2` should contain the last 2 letters of the variable `word`
 * `middle_word` should contain the value of the variable `word` without the first and last letters
 
-**Source:** [7-edges.py](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x00-python-hello_world/7-edges.py)
+**Solution:** [7-edges.py](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x00-python-hello_world/7-edges.py)
 
 ```
 $ amonkeyprogrammer@ubuntu:~/py/0x00$ ./7-edges.py
@@ -170,7 +170,7 @@ Complete this [source code](https://github.com/holbertonschool/0x00.py/blob/mast
 * You are not allowed to create new variables
 * You are not allowed to use string literals
 
-**Source:** [8-concat_edges.py](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x00-python-hello_world/8-concat_edges.py)
+**Solution:** [8-concat_edges.py](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x00-python-hello_world/8-concat_edges.py)
 
 ```
 $ amonkeyprogrammer@ubuntu:~/py/0x00$ ./8-concat_edges.py
@@ -186,7 +186,7 @@ Write a Python script that prints “The Zen of Python”, by TimPeters, followe
 
 * Your script should be maximum 98 characters long (please check with `wc -m 9-easter_egg.py`)
 
-**Source:** [9-easter_egg.py](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x00-python-hello_world/9-easter_egg.py)
+**Solution:** [9-easter_egg.py](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x00-python-hello_world/9-easter_egg.py)
 
 ```
 $ amonkeyprogrammer@ubuntu:~/py/0x00$ ./9-easter_egg.py
@@ -377,7 +377,7 @@ int main(void)
 }
 ```
 
-**Source:** [10-check_cycle.c](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x00-python-hello_world/10-check_cycle.c), [lists.h](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x00-python-hello_world/lists.h)
+**Solution:** [10-check_cycle.c](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x00-python-hello_world/10-check_cycle.c), [lists.h](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x00-python-hello_world/lists.h)
 
 ```
 $ amonkeyprogrammer@ubuntu:~/0x00$ gcc -Wall -Werror -Wextra -pedantic 10-main.c 10-check_cycle.c 10-linked_lists.c -o cycle
@@ -404,7 +404,7 @@ Write a Python script that prints exactly `and that piece of art is useful - Dor
 * Your script should print to `stderr`
 * Your script should exit with the status code `1`
 
-**Source:** [100-write.py](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x00-python-hello_world/100-write.py)
+**Solution:** [100-write.py](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x00-python-hello_world/100-write.py)
 
 ```
 $ amonkeyprogrammer@ubuntu:~/py/0x00$ ./100-write.py
@@ -425,7 +425,7 @@ The Python file name will be stored in the environment variable `$PYFILE`
 
 The output filename has to be `$PYFILEc` (ex: `export PYFILE=my_main.py` => output filename: `my_main.pyc`)
 
-**Source:** [101-compile](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x00-python-hello_world/101-compile)
+**Solution:** [101-compile](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x00-python-hello_world/101-compile)
 
 ```
 $ amonkeyprogrammer@ubuntu:~/py/0x00$ cat main.py 
@@ -456,7 +456,7 @@ $ amonkeyprogrammer@ubuntu:~/py/0x00$
 
 Write the Python function `def magic_calculation(a, b):` that does exactly the same as the following Python bytecode:
 
-**Source:** [102-magic_calculation.py](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x00-python-hello_world/102-magic_calculation.py)
+**Solution:** [102-magic_calculation.py](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x00-python-hello_world/102-magic_calculation.py)
 
 ```
   3           0 LOAD_CONST               1 (98)

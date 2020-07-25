@@ -24,7 +24,7 @@ Write a function that returns the list of available attributes and methods of an
 * Returns a `list` object
 * You are not allowed to import any module
 
-**Source:** [0-lookup.py](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x0A-python-inheritance/0-lookup.py)
+**Solution:** [0-lookup.py](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x0A-python-inheritance/0-lookup.py)
 
 ```
 $ amonkeyprogrammer@ubuntu:~/0x0A$ cat 0-main.py
@@ -58,7 +58,7 @@ Write a class `MyList` that inherits from `list`:
 * You can assume that all the elements of the list will be of type `int`
 * You are not allowed to import any module
 
-**Source:** [1-my_list.py](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x0A-python-inheritance/1-my_list.py), [tests/1-my_list.txt](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x0A-python-inheritance/tests/1-my_list.txt)
+**Solution:** [1-my_list.py](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x0A-python-inheritance/1-my_list.py), [tests/1-my_list.txt](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x0A-python-inheritance/tests/1-my_list.txt)
 
 ```
 $ amonkeyprogrammer@ubuntu:~/0x0A$ cat 1-main.py
@@ -89,7 +89,7 @@ Write a function that returns `True` if the object is exactly an instance of the
 * Prototype: `def is_same_class(obj, a_class):`
 * You are not allowed to import any module
 
-**Source:** [2-is_same_class.py](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x0A-python-inheritance/2-is_same_class.py)
+**Solution:** [2-is_same_class.py](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x0A-python-inheritance/2-is_same_class.py)
 
 ```
 $ amonkeyprogrammer@ubuntu:~/0x0A$ cat 2-main.py
@@ -116,7 +116,7 @@ Write a function that returns `True` if the object is an instance of, or if the 
 * Prototype: `def is_kind_of_class(obj, a_class):`
 * You are not allowed to import any module
 
-**Source:** [3-is_kind_of_class.py](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x0A-python-inheritance/3-is_kind_of_class.py)
+**Solution:** [3-is_kind_of_class.py](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x0A-python-inheritance/3-is_kind_of_class.py)
 
 ```
 $ amonkeyprogrammer@ubuntu:~/0x0A$ cat 3-main.py
@@ -144,7 +144,7 @@ Write a function that returns `True` if the object is an instance of a class tha
 * Prototype: `def inherits_from(obj, a_class):`
 * You are not allowed to import any module
 
-**Source:** [4-inherits_from.py](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x0A-python-inheritance/4-inherits_from.py)
+**Solution:** [4-inherits_from.py](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x0A-python-inheritance/4-inherits_from.py)
 
 ```
 $ amonkeyprogrammer@ubuntu:~/0x0A$ cat 4-main.py
@@ -171,7 +171,7 @@ Write an empty class `BaseGeometry`.
 
 * You are not allowed to import any module
 
-**Source:** [5-base_geometry.py](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x0A-python-inheritance/5-base_geometry.py)
+**Solution:** [5-base_geometry.py](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x0A-python-inheritance/5-base_geometry.py)
 
 ```
 $ amonkeyprogrammer@ubuntu:~/0x0A$ cat 5-main.py
@@ -198,7 +198,7 @@ Write a class ``BaseGeometry`` (based on ``5-base_geometry.py``).
 * Public instance method: `def area(self):` that raises an `Exception` with the message `area() is not implemented`
 * You are not allowed to import any module
 
-**Source:** [6-base_geometry.py](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x0A-python-inheritance/6-base_geometry.py)
+**Solution:** [6-base_geometry.py](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x0A-python-inheritance/6-base_geometry.py)
 
 ```
 $ amonkeyprogrammer@ubuntu:~/0x0A$ cat 6-main.py
@@ -228,7 +228,7 @@ Write a class BaseGeometry (based on 6-base_geometry.py).
     * if `value` is less or equal to 0: raise a `ValueError` exception with the message `<name> must be greater than 0`
 *  You are not allowed to import any module
 
-**Source:** [7-base_geometry.py](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x0A-python-inheritance/7-base_geometry.py), [tests/7-base_geometry.txt](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x0A-python-inheritance/tests/7-base_geometry.txt)
+**Solution:** [7-base_geometry.py](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x0A-python-inheritance/7-base_geometry.py), [tests/7-base_geometry.txt](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x0A-python-inheritance/tests/7-base_geometry.txt)
 
 ```
 $ amonkeyprogrammer@ubuntu:~/0x0A$ cat 7-main.py
@@ -270,7 +270,7 @@ Write a class `Rectangle` that inherits from `BaseGeometry` (`7-base_geometry.py
     * `width` and `height` must be private. No getter or setter
     * `width` and `height` must be positive integers, validated by `integer_validator`
 
-**Source:** [8-rectangle.py](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x0A-python-inheritance/8-rectangle.py)
+**Solution:** [8-rectangle.py](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x0A-python-inheritance/8-rectangle.py)
 
 ```
 $ amonkeyprogrammer@ubuntu:~/0x0A$ cat 8-main.py
@@ -310,7 +310,7 @@ Write a class `Rectangle` that inherits from `BaseGeometry` (`7-base_geometry.py
 * the `area()` method must be implemented
 * `print()` should print, and `str()` should return, the following rectangle description: `[Rectangle] <width>/<height>`
 
-**Source:** [9-rectangle.py](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x0A-python-inheritance/9-rectangle.py)
+**Solution:** [9-rectangle.py](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x0A-python-inheritance/9-rectangle.py)
 
 ```
 $ amonkeyprogrammer@ubuntu:~/0x0A$ cat 9-main.py
@@ -337,7 +337,7 @@ Write a class `Square` that inherits from `Rectangle` (`9-rectangle.py`):
     * `size` must be a positive integer, validated by `integer_validator`
 * the `area()` method must be implemented
 
-**Source:** [10-square.py](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x0A-python-inheritance/10-square.py)
+**Solution:** [10-square.py](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x0A-python-inheritance/10-square.py)
 
 ```
 $ amonkeyprogrammer@ubuntu:~/0x0A$ cat 10-main.py
@@ -365,7 +365,7 @@ Write a class `Square` that inherits from `Rectangle` (`9-rectangle.py`). (task 
 * the `area()` method must be implemented
 * `print()` should print, and `str()` should return, the square description: `[Square] <width>/<height>`
 
-**Source:** [11-square.py](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x0A-python-inheritance/11-square.py)
+**Solution:** [11-square.py](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x0A-python-inheritance/11-square.py)
 
 ```
 $ amonkeyprogrammer@ubuntu:~/0x0A$ cat 11-main.py
