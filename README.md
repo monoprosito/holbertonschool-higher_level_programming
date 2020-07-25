@@ -39,11 +39,13 @@ Here is the complete list of projects in this repository, each project has its d
 * [0x0C. Python - Almost a circle](https://github.com/monoprosito/holbertonschool-higher_level_programming/tree/master/0x0C-python-almost_a_circle)
 * [0x0D. SQL - Introduction](https://github.com/monoprosito/holbertonschool-higher_level_programming/tree/master/0x0D-SQL_introduction)
 * [0x0E. SQL - More queries](https://github.com/monoprosito/holbertonschool-higher_level_programming/tree/master/0x0E-SQL_more_queries)
+* [0x0F. Python - Object-relational mapping](https://github.com/monoprosito/holbertonschool-higher_level_programming/tree/master/0x0F-python-object_relational_mapping)
+* [0x10. Python - Network #0](https://github.com/monoprosito/holbertonschool-higher_level_programming/tree/master/0x10-python-network_0)
+* [0x11. Python - Network #1](https://github.com/monoprosito/holbertonschool-higher_level_programming/tree/master/0x11-python-network_1)
+* [0x12. Javascript - Warm up](https://github.com/monoprosito/holbertonschool-higher_level_programming/tree/master/0x12-javascript-warm_up)
+* [0x13. Javascript - Objects, Scopes and Closures](https://github.com/monoprosito/holbertonschool-higher_level_programming/tree/master/0x13-javascript_objects_scopes_closures)
+* [0x14. Javascript - Web scraping](https://github.com/monoprosito/holbertonschool-higher_level_programming/tree/master/0x14-javascript-web_scraping)
+* [0x15. Javascript - Web JQuery](https://github.com/monoprosito/holbertonschool-higher_level_programming/tree/master/0x15-javascript-web_jquery)
 
 ## Usage
 Each project and task contains the instructions to compile the code and execute the results.
-
-## Contributors
-* **Santiago Arboleda Londoño** ([@monoprosito](https://github.com/monoprosito)), for writing the solutions to the exercises.
-* **Julien Barbier** ([@jbarbier](https://github.com/jbarbier)), for providing tests scripts.
-* **Guillaume Salva** ([@papamuziko](https://github.com/papamuziko)), for providing tests scripts.
